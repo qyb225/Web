@@ -1,0 +1,134 @@
+body {
+  background-image: url(images/background.png);
+  font-size: 8pt;
+  font-family: Verdana, Tahoma, sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+h1 {
+  font-size: 24pt;
+  font-weight: bold;
+  font-family: Tahoma, Verdana, sans-serif;
+  text-align: center;
+}
+
+div#title {
+  background-image: url(images/rottenbackground.png);
+  background-repeat: repeat-x;
+  height: 83px;
+}
+
+span#fresh {
+  font-size: 48pt;
+  font-weight: bold;
+  color: red;
+  display: inline-block;
+  margin-top: 6px;
+}
+
+#title img {
+  float: left;
+  width: 98px;
+}
+
+
+div#head {
+  width: 100%;
+  background-image: url(images/bannerbackground.png);
+  text-align: center;
+}
+
+div#total {
+  margin-left: auto;
+  margin-right: auto;
+  border: solid gray 4px;
+  width: 800px;
+}
+
+div#tortoise {
+  float: right;
+  width: 250px;
+  background-color: #A2B964
+}
+
+#tortoise dl {
+  margin: 0px;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+}
+
+#tortoise dt {
+  font-weight: bold;
+}
+
+#tortoise dd {
+  padding-bottom: 1em;
+}
+
+dd#last_dd {
+  padding-bottom: 0px;
+}
+
+div#cell1, div#cell2 {
+  width: 47%;
+  display: table-cell;
+  vertical-align: top;
+}
+
+div#all_cell {
+  display: table-row;
+}
+
+div#table {
+  width: 550px;
+  display: table;
+  border-spacing: 11px;
+  font-family: 
+}
+
+p.quote {
+  font-weight: bold;
+  background-color: #E1D697;
+  border: gray solid 2px;
+  padding: 8px;
+  margin: 0px;
+  overflow: hidden;
+}
+
+p.quote img {
+  float: left;
+  width: 25px;
+  margin-right: 5px;
+}
+
+span.name {
+  font-style: italic;
+}
+
+p.cr {
+  margin-bottom: 3em;
+}
+
+p.cr img {
+  float: left;
+  width: 35px;
+  margin-right: 5px;
+}
+
+div#foot p {
+  margin-bottom: 0px;
+  background-color: #A2B964;
+  text-align: center;
+  clear: right;
+}
+
+span#reviews {
+  color: white;
+}
+
+#w3c {
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+}

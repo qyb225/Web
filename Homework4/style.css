@@ -1,0 +1,75 @@
+body {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 32px;
+}
+
+#calculator {
+  width: 466px;
+  padding-bottom: 10px;
+  border: solid black 3px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  background-color: rgba(230, 230, 245, 1);
+}
+
+#screen {
+  width: 422px;
+  border: solid gray 2px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  background-color: rgba(240, 250, 240, 1);
+  padding: 0px 10px;
+}
+
+#screen_u {
+  height: 35px;
+  line-height: 35px;
+  font-size: 0.8em;
+  margin-top: 8px;
+  text-align: left;
+  text-overflow: clip;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: Courier, "Courier New", "Andale Mono" "MS Courier", monospace;
+}
+
+#screen_d {
+  height: 70px;
+  line-height: 70px;
+  font-size: 1.5em; 
+  text-align: right;
+}
+
+#all_button {
+  display: table;
+  border-spacing: 13px;
+}
+
+.table_row {
+  display: table-row;
+}
+
+.num_symbol {
+  background-color: rgba(240, 240, 240, 1);
+  display: table-cell;
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border: double gray 1px;
+}
+
+.num_symbol:hover {
+  background-color: rgba(225, 225, 225, 1);
+}
+
+#intro {
+  font-family: "Comic Sans MS", sans-serif;
+  font-size: 0.1em;
+  height: 10px;
+  text-align: center;
+  font-weight: bold;
+}

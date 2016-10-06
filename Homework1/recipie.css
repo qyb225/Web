@@ -1,0 +1,72 @@
+h1 {
+    color: rgb(164, 164, 0);
+    background-color: rgb(240, 240, 240);
+    font-family: "Century Gothic", Futura, Verdana;
+    font-size: 22pt;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(164, 164, 0);
+    background-color: rgb(240, 240, 240);
+    font-family: Calibri, "Century Gothic", Verdana;
+    font-size: 18pt;
+    text-decoration: underline;
+    text-align: left;
+}
+
+p {
+    /*background-color: white;*/
+    color: rgb(64, 64, 64);
+    font-size: 11pt;
+    font-family: Georgia, Garamond;
+}
+
+ul {
+    /*background-color: white;*/
+    color: rgb(64, 64, 64);
+    font-size: 11pt;
+    font-family: Georgia, Garamond;
+    list-style: url("image/pie_icon.gif")outside circle;
+    margin-left: 10px;
+}
+
+ol {
+    /*background-color: white;*/
+    color: rgb(64, 64, 64);
+    font-size: 11pt;
+    font-family: Georgia, Garamond;
+    margin-left: 10px;
+}
+
+a {
+    color: rgb(164, 164, 0);
+
+}
+
+a.w3c {
+    text-decoration: none;
+}
+
+p.Adage {
+    background-color: rgb(255, 255, 200);
+    font-family: Georgia, "Comic Sans MS";
+    font-style: italic;
+    margin-left: 30px;
+}
+
+body {
+    background-image: url("image/silverware.jpg");
+    background-attachment: fixed;
+}
+
+img.Picture {
+    /*border: solid 2px green;*/
+    border: none;
+}
+
+span.bold_words {
+    font-weight: bold;
+}

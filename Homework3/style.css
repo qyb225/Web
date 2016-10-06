@@ -1,0 +1,482 @@
+body {
+  font-family: sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+#at-plus-container {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  position: absolute;
+  top: 450px;
+  left: 50%;
+}
+
+#at-plus-container:hover {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  top: 450px;
+  left: 50%;
+}
+
+.apb {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: rgba(199, 199, 277, 1);
+  position: absolute; 
+  top: 25px;
+  left: 18px;
+  transition: all 0.4s ease-in-out 0.3s;
+  -moz-transition: all 0.4s ease-in-out 0.3s;
+  -webkit-transition: all 0.4s ease-in-out 0.3s;
+  -o-transition: all 0.4s ease-in-out 0.3s;
+}
+
+#at-plus-container:hover .apb {
+  transform: scale(2);
+  background-color: rgba(38, 40, 145, 0.9);
+  transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -o-transition: all 0.4s ease-in-out 0s;
+}
+
+.icon {
+  background-image: url(assets/images/atplus_white.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  background-size: 80%;
+  border-radius: 50%;
+  transition: all 0.4s ease-in-out 0.4s;
+  -moz-transition: all 0.4s ease-in-out 0.4s;
+  -webkit-transition: all 0.4s ease-in-out 0.4s;
+  -o-transition: all 0.4s ease-in-out 0.4s;
+}
+
+#at-plus-container:hover .icon {
+  background-image: url(assets/images/atplus_green.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -o-transition: all 0.4s ease-in-out 0s;
+}
+
+
+#at-plus-container:hover .info {
+  position: absolute;
+  left: -35px; /*365 -390*/
+  top: -170px;  /*180 -250*/
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: solid 2px rgba(128, 128, 128, 0.9);
+  background-color: rgba(128, 128, 128, 0.9);
+  opacity: 1;
+}
+
+.info {
+  position: absolute;
+  left: 23px;
+  top: 23px;
+  z-index: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: solid 2px rgba(128, 128, 128, 0.9);
+  background-color: rgba(128, 128, 128, 0.9);
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+}
+
+.info span {
+  color: rgba(0, 0, 0, 0);
+}
+
+#at-plus-container:hover .info span {
+  color: white;
+  transition: all 0.5s ease-in-out 0.4s;
+  -moz-transition: all 0.5s ease-in-out 0.4s;
+  -webkit-transition: all 0.5s ease-in-out 0.4s;
+  -o-transition: all 0.5s ease-in-out 0.4s;
+}
+
+#at-plus-container:hover #info-bar {
+  overflow: visible;
+}
+
+#info-bar {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: solid 2px rgba(128, 128, 128, 0);
+  background-color: rgba(128, 128, 128, 0);
+  transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -o-transition: all 0.4s ease-in-out 0s;
+  overflow: hidden;
+}
+
+
+#at-plus-container:hover .button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(128, 128, 128, 0.9);
+}
+
+.button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(128, 128, 128, 0);
+  color: rgba(0, 0, 0, 0);
+  transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+}
+
+img {
+  opacity: 0;
+  transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+}
+
+#at-plus-container:hover img {
+  opacity: 1;
+}
+
+#at-plus-container:hover .mask {
+  background-image: url(assets/images/mask.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: -40px;
+  left: -60px;
+  background-color: rgba(128, 128, 128, 0.9);
+} 
+
+.mask {
+  background-image: url(assets/images/mask.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: rgba(128, 128, 128, 0);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  overflow: hidden;
+} 
+
+.history {
+  background-image: url(assets/images/history.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: rgba(128, 128, 128, 0);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+}
+
+#at-plus-container:hover .history {
+  background-image: url(assets/images/history.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 7px;
+  left: -80px;
+  background-color: rgba(128, 128, 128, 0.9);
+}
+
+#at-plus-container:hover .message {
+  background-image: url(assets/images/message.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 50px;
+  left: -60px;
+  background-color: rgba(128, 128, 128, 0.9);
+}
+
+.message {
+  background-image: url(assets/images/message.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: rgba(128, 128, 128, 0);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+}
+
+#at-plus-container:hover .unread {
+  font-size: 13px;
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+  background-color: red;
+  text-align: center;
+  line-height: 25px;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  position: relative;
+  top: -8px;
+  left: 22px;
+}
+
+
+.unread {
+  font-size: 13px;
+  display: inline-block;
+  color: rgba(0, 0, 0, 0);
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0);
+  text-align: center;
+  line-height: 25px;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+}
+
+.setting {
+  background-image: url(assets/images/setting.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: rgba(128, 128, 128, 0);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+}
+
+#at-plus-container:hover .setting {
+  background-image: url(assets/images/setting.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 75px;
+  left: -13px;
+  background-color: rgba(128, 128, 128, 0.9);
+}
+
+.sign {
+  background-image: url(assets/images/signin.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: rgba(128, 128, 128, 0);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+}
+
+#at-plus-container:hover .sign {
+  background-image: url(assets/images/signin.png);
+  background-color: rgba(128, 128, 128, 0.9);
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 65px;
+  left: 43px;
+}
+
+.user {
+  position: relative;
+  left: 8px; /*-8*/
+  top: -7px; /*-7*/
+  overflow: hidden;
+}
+
+.comment {
+  position: relative;
+  left: -3px;
+  top: 8px;
+  overflow: hidden;
+}
+
+.posted {
+  position: relative;
+  left: -10px;
+  top: 23px;
+  overflow: hidden;
+}
+
+.like {
+  position: relative;
+  left: 42px;
+  top: -4px;
+  overflow: hidden;
+}
+
+div.info {
+  color: white;
+}
+
+li.user span {
+  font-size: 17px;
+  position: relative;
+  top: -5px;
+  left: 7px;
+}
+
+li.comment span {
+  font-size: 35px;
+  position: relative;
+  top: -3px;
+  left: 15px;
+  display: inline-block;
+}
+
+#at-plus-container:hover li.posted span {
+  display: inline-block;
+  color: #079E6E;
+  font-weight: bold;
+  position: relative;
+  top: -5px;
+  left: 5px;
+}
+
+li.posted span {
+  display: inline-block;
+  color: rgba(0, 0, 0, 0);
+  font-weight: bold;
+  position: relative;
+  top: -5px;
+  left: 5px;
+  transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+}
+
+#at-plus-container:hover li.like span {
+  display: inline-block;
+  color: #079E6E;
+  font-weight: bold;
+  position: relative;
+  top: -5px;
+  left: 5px;
+}
+
+li.like span {
+  display: inline-block;
+  color: rgba(0, 0, 0, 0);
+  font-weight: bold;
+  position: relative;
+  top: -5px;
+  left: 5px;
+  transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -o-transition: all 0.4s ease-in-out 0s;
+}
+
+#control-ring {
+  background-color: rgba(0, 0,0, 0);
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  top: 5px;
+  left: 12px;
+}
+
+#control-ring .mask {
+  transition: all 0.4s ease-in-out 0.1s;
+  -moz-transition: all 0.4s ease-in-out 0.1s;
+  -webkit-transition: all 0.4s ease-in-out 0.1s;
+  -o-transition: all 0.4s ease-in-out 0.1s;
+}
+
+#control-ring .mask:hover {
+  background-color: rgba(80, 80, 80, 0.9);
+}
+
+#control-ring .history {
+  transition: all 0.4s ease-in-out 0.1s;
+  -moz-transition: all 0.4s ease-in-out 0.1s;
+  -webkit-transition: all 0.4s ease-in-out 0.1s;
+  -o-transition: all 0.4s ease-in-out 0.1s;
+}
+
+#control-ring .history:hover {
+  background-color: rgba(80, 80, 80, 0.9);
+}
+
+#control-ring .message {
+  transition: all 0.4s ease-in-out 0.1s;
+  -moz-transition: all 0.4s ease-in-out 0.1s;
+  -webkit-transition: all 0.4s ease-in-out 0.1s;
+  -o-transition: all 0.4s ease-in-out 0.1s;
+}
+
+#control-ring .message:hover {
+  background-color: rgba(80, 80, 80, 0.9);
+}
+
+#control-ring .setting {
+  transition: all 0.4s ease-in-out 0.1s;
+  -moz-transition: all 0.4s ease-in-out 0.1s;
+  -webkit-transition: all 0.4s ease-in-out 0.1s;
+  -o-transition: all 0.4s ease-in-out 0.1s;
+}
+
+#control-ring .setting:hover {
+  background-color: rgba(80, 80, 80, 0.9);
+}
+
+#control-ring .sign {
+  transition: all 0.4s ease-in-out 0.1s;
+  -moz-transition: all 0.4s ease-in-out 0.1s;
+  -webkit-transition: all 0.4s ease-in-out 0.1s;
+  -o-transition: all 0.4s ease-in-out 0.1s;
+}
+
+#control-ring .sign:hover {
+  background-color: rgba(80, 80, 80, 0.9);
+}
