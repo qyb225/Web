@@ -48,7 +48,7 @@ ul {
 }
 
 .icon {
-  background-image: url(assets/images/atplus_white.png);
+  background-image: url(images/atplus_white.png);
   background-repeat: no-repeat;
   background-position: center center;
   width: 100%;
@@ -62,7 +62,7 @@ ul {
 }
 
 #at-plus-container:hover .icon {
-  background-image: url(assets/images/atplus_green.png);
+  background-image: url(images/atplus_green.png);
   background-repeat: no-repeat;
   background-position: center center;
   transition: all 0.4s ease-in-out 0s;
@@ -164,7 +164,7 @@ img {
 }
 
 #at-plus-container:hover .mask {
-  background-image: url(assets/images/mask.png);
+  background-image: url(images/mask.png);
   background-repeat: no-repeat;
   background-position: center center;
   position: absolute;
@@ -174,7 +174,7 @@ img {
 } 
 
 .mask {
-  background-image: url(assets/images/mask.png);
+  background-image: url(images/mask.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-color: rgba(128, 128, 128, 0);
@@ -190,7 +190,7 @@ img {
 } 
 
 .history {
-  background-image: url(assets/images/history.png);
+  background-image: url(images/history.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-color: rgba(128, 128, 128, 0);
@@ -205,7 +205,7 @@ img {
 }
 
 #at-plus-container:hover .history {
-  background-image: url(assets/images/history.png);
+  background-image: url(images/history.png);
   background-repeat: no-repeat;
   background-position: center center;
   position: absolute;
@@ -215,7 +215,7 @@ img {
 }
 
 #at-plus-container:hover .message {
-  background-image: url(assets/images/message.png);
+  background-image: url(images/message.png);
   background-repeat: no-repeat;
   background-position: center center;
   position: absolute;
@@ -225,7 +225,7 @@ img {
 }
 
 .message {
-  background-image: url(assets/images/message.png);
+  background-image: url(images/message.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-color: rgba(128, 128, 128, 0);
@@ -277,7 +277,7 @@ img {
 }
 
 .setting {
-  background-image: url(assets/images/setting.png);
+  background-image: url(images/setting.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-color: rgba(128, 128, 128, 0);
@@ -292,7 +292,7 @@ img {
 }
 
 #at-plus-container:hover .setting {
-  background-image: url(assets/images/setting.png);
+  background-image: url(images/setting.png);
   background-repeat: no-repeat;
   background-position: center center;
   position: absolute;
@@ -302,7 +302,7 @@ img {
 }
 
 .sign {
-  background-image: url(assets/images/signin.png);
+  background-image: url(images/signin.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-color: rgba(128, 128, 128, 0);
@@ -317,7 +317,7 @@ img {
 }
 
 #at-plus-container:hover .sign {
-  background-image: url(assets/images/signin.png);
+  background-image: url(images/signin.png);
   background-color: rgba(128, 128, 128, 0.9);
   background-repeat: no-repeat;
   background-position: center center;
