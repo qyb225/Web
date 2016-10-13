@@ -5,6 +5,7 @@ body {
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  background-image: url(../image/background.jpg);
 }
 
 #calculator {
@@ -16,11 +17,11 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
-  background-image: url(image/background.jpg);
+  background-image: url(../image/calculator.jpg);
   background-color: rgba(230, 230, 245, 1);
   -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5)
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 #screen {

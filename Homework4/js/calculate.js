@@ -24,7 +24,7 @@ function click(i) {
     //Click other Button.
     else {
         __addstr__(i);
-        show_ex.innerHTML = express_hidden(express);
+        show_ex.innerHTML = express_hidden(express); //Control the expression on the screen.
     }    
 }
 
@@ -66,8 +66,8 @@ function __calculate__() {
         solution = eval(express);
 
         for(var k = 0; k < express.length - 1; ++k) {
-            if (express[k] == express[k + 1] && express[k] == "/") {
-                throw SyntaxError;
+            if (express[k] == "/" && (express[k] == express[k + 1] || express[k + 1] == "*")) {
+                throw SyntaxError; //When express has // and /* , a syntax error will be thrown.
                 break;
             }
         }
