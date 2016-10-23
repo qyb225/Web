@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <link rel = "stylesheet" type = "text/css" href = "css/moles.css">
+    <title>Whac A Mole!</title>
+  </head>
+  <body>
+    <div id = "note">
+      <h1>
+        Whac-a-mole
+      </h1>
+      <p>
+        Test your skill. How many boxes(moles) can you check(hit) in 30 seconds?
+      </p>
+      <div id = "button_screen">
+        <div class = "screen">
+          <div class = "every_show">
+            <button id = "start">Start Game | Stop Game</button>
+          </div>
+          <div id = "time" class = "every_show">
+            Time: <span id = "second">30</span>
+          </div>
+        </div>
+        <div class = "screen">
+          <div class = "every_show">
+            <p id = "condition">Game Over</p>
+          </div>
+          <div id = "score" class = "every_show">
+            Score: <span id = "sc">0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id = "all_box">
+      <div id = "row1" class = "row">
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+      </div>
+      <div id = "row2" class = "row">
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+      </div>
+      <div id = "row3" class = "row">
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+      </div>
+      <div id = "row4" class = "row">
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+      </div>
+      <div id = "row5" class = "row">
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+      </div>
+      <div id = "row6" class = "row">
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+      </div>
+    </div>
+    <div id = "footer">
+      <h2>Instruction</h2>
+      <ol>
+        <li>Click on the radio buttons(moles) as they are selected randomly by computer.</li>
+        <li>1 point per hit, minus 1 point per miss.</li>
+      </ol>
+    </div>
+    <script type = "text/javascript" src = "js/moles.js"></script>
+  </body>
+</html>
