@@ -1,0 +1,1 @@
+var what_to_sort = $("th");
