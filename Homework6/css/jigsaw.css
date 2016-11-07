@@ -1,0 +1,121 @@
+#all_pic_fragment {
+  width: 420px;
+  height: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../image/timg_1.jpg);
+  display: table;
+  border: 7px solid rgba(0, 0, 0, 0.3);
+}
+
+#show {
+  position: absolute;
+  top: 90px;
+  left: 50px;
+  height: 250px;
+  width: 250px;
+  background-image: url(../image/bg0_show.jpg);
+}
+
+#bt {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  display: table-row;
+}
+
+h1 {
+  font-family: "Comic Sans Ms", sans-serif;
+  text-align: center;
+}
+
+.pic_frag {
+  width: 100px;
+  height: 100px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(220, 203, 147, 0.9);
+  display: table-cell;
+  cursor: pointer;
+}
+
+#pic_0 {
+  background-image: url(../image/bg0.jpg);
+  background-position: 0px 0px;
+}
+
+#pic_1 {
+  background-image: url(../image/bg0.jpg);
+  background-position: -105px 0px; /*1. 向右移动x 2. 向下移动y*/
+}
+
+#pic_2 {
+  background-image: url(../image/bg0.jpg);
+  background-position: -210px 0px;
+}
+
+#pic_3 {
+  background-image: url(../image/bg0.jpg);
+  background-position: -315px 0px;
+}
+
+#pic_4 {
+  background-image: url(../image/bg0.jpg);
+  background-position: 0px -105px;
+}
+
+#pic_5 {
+  background-image: url(../image/bg0.jpg);
+  background-position: -105px -105px;
+}
+
+#pic_6 {
+  background-image: url(../image/bg0.jpg);
+  background-position: -210px -105px;
+}
+
+#pic_7 {
+  background-image: url(../image/bg0.jpg);
+  background-position: -315px -105px;
+}
+
+#pic_8 {
+  background-image: url(../image/bg0.jpg);
+  background-position: 0px -210px;
+}
+
+#pic_9 {
+  background-image: url(../image/bg0.jpg);
+  background-position: -105px -210px;
+}
+
+#pic_10 {
+  background-image: url(../image/bg0.jpg);
+  background-position: -210px -210px;
+}
+
+#pic_11 {
+  background-image: url(../image/bg0.jpg);
+  background-position: -315px -210px;
+}
+
+#pic_12 {
+  background-image: url(../image/bg0.jpg);
+  background-position: 0px -315px;
+}
+
+#pic_13 {
+  background-image: url(../image/bg0.jpg);
+  background-position: -105px -315px;
+}
+
+#pic_14 {
+  background-image: url(../image/bg0.jpg);
+  background-position: -210px -315px;
+}
+
+#pic_15 {
+  cursor: auto;
+}
