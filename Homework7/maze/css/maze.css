@@ -1,0 +1,155 @@
+body {
+  font-size: 26px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+h1 {
+  font-size: 32px;
+  text-align: center;
+  width: 634px;
+  margin-left: 300px;
+  margin-bottom: 5px;
+}
+
+p {
+  width: 634px;
+  text-align: center;
+  margin-left: 300px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#maze {
+  position: absolute;
+  top: 180px;
+  left: 300px;
+  cursor: pointer;
+  width: 634px;
+  height: 340px;
+}
+
+#footer {
+  position: absolute;
+  top: 530px;
+  left: 100px;
+  width: 0px;
+  text-align: left;
+  font-size: 20px;
+  font-family: "Comic Sans MS", sans-serif;
+}
+
+#footer p {
+  width: 634px;
+  margin-left: 200px;
+}
+
+#footer div {
+  width: 100px;
+  height: 30px;
+  background-color: rgba(238, 238, 238, 1);
+  border: solid 2px black;
+  margin-left: 467px;
+}
+
+#cheat {
+  height: 40px;
+  width: 10px;
+  position: absolute;
+  top: 253px;
+  left: -10px;
+}
+
+#start, #end {
+  height: 32px;
+  line-height: 32px;
+  width: 32px;
+  border: solid 1px black;
+  text-align: center;
+}
+
+#start {
+  position: absolute;
+  top: 257px;
+  background-color: rgba(133, 254, 133, 1);
+}
+
+#end {
+  position: absolute;
+  top: 257px;
+  left: 599px;
+  background-color: rgba(133, 133, 254, 1);
+}
+
+#rectangle_top {
+  position: absolute;
+  height: 40px;
+  width: 630px;
+  border: solid 2px black;
+  background-color: rgba(238, 238, 238, 1);
+}
+
+#rectangle_bottom {
+  height: 40px;
+  width: 630px;
+  border: solid 2px black;
+  position: absolute;
+  top: 294px;
+  z-index: 0;
+  background-color: rgba(238, 238, 238, 1);
+}
+
+#rectangle_left {
+  height: 210px;
+  width: 200px;
+  border: solid 2px black;
+  border-top: none;
+  position: absolute;
+  top: 42px;
+  background-color: rgba(238, 238, 238, 1);
+}
+
+#rectangle_right {
+  height: 210px;
+  width: 200px;
+  border: solid 2px black;
+  border-top: none;
+  position: absolute;
+  top: 42px;
+  left: 430px;
+  background-color: rgba(238, 238, 238, 1);
+}
+
+#rectangle_middle {
+  height: 212px;
+  width: 140px;
+  border: solid 2px black;
+  position: absolute;
+  top: 82px;
+  left: 244px;
+  background-color: rgba(238, 238, 238, 1);
+  border-bottom: none;
+  z-index: 2;
+}
+
+#rectangle #rectangle_top:hover {
+  background-color: red;
+}
+
+#rectangle #rectangle_bottom:hover {
+  background-color: red;
+}
+
+#rectangle #rectangle_left:hover {
+  background-color: red;
+}
+
+#rectangle #rectangle_right:hover {
+  background-color: red;
+}
+
+#rectangle #rectangle_middle:hover {
+  background-color: red;
+}
