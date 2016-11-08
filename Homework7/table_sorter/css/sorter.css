@@ -3,6 +3,11 @@ th {
   color: white;
   text-align: left;
   border: 1px solid gray;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
 }
 
 table {
@@ -20,4 +25,14 @@ td, th {
 
 .alternate {
   background-color: rgba(220, 220, 220, 1);
+}
+
+#down {
+  background: url(../image/descend.png) rgba(3, 27, 127, 0.3) no-repeat right center;
+  color: rgba(3, 27, 100, 1);
+}
+
+#up {
+  background: url(../image/ascend.png) rgba(3, 27, 127, 0.3) no-repeat right center;
+  color: rgba(3, 27, 100, 1);
 }

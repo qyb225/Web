@@ -15,7 +15,7 @@ window.onload = function() {
     finish = true;
 }
 
-$("#bt").click(function() {finish = false; $("h2").html(""); mess();});
+$("#bt").click(function() {finish = false; $("h2").html(""); mess();$("#situ").html("Playing...");});
 
 function mess() {
     var i = 0;
@@ -50,6 +50,7 @@ function judge_move(t) {
     can_move = move(t, forward, x, y);
     if (judge_win() && !finish && step_count != 0) {
         $("h2").html("You win! You have used " + step_count + " Steps");
+        $("#situ").html("Game Over");
         var size_now = 1.25 * size_before;
         $("h2").css("font-size", size_now); 
         step_count = 0;
@@ -104,19 +105,14 @@ function judge(x, y) {
             return "r";
         else if (n_y == y - 1)
             return "l";
-        else 
-            return "c";
     }
     else if (y == n_y) {
         if (n_x == x + 1)
             return "d";
         else if (n_x == x - 1)
             return "u"
-        else 
-            return "c";
     }
-    else
-        return "c";
+    return "c";
 }
 
 function random_num(min, max) {
