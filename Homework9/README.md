@@ -15,7 +15,11 @@ S4：**乱点鸳鸯**
 
 在浏览器中，输入
 
-> **localhost:3000/S1/index.html**,**localhost:3000/S2/index.html**...
+> **localhost:3000/S1/index.html**
+
+> **localhost:3000/S2/index.html**
+
+> ...
 
 即可访问S1, S2, S3, S4.
 
