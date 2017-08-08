@@ -18,9 +18,9 @@
         return request;
     };
 
-    var handlerResponse = function (request, responseHandler, isJasonResponse) {
+    var handlerResponse = function (request, responseHandler, isJsonResponse) {
         if (request.readyState == 4 && request.status == 200) {
-            if (isJasonResponse) {
+            if (isJsonResponse) {
                 responseHandler(JSON.parse(request.responseText));
             } else {
                 responseHandler(request.responseText);
@@ -28,10 +28,10 @@
         }
     };
 
-    ajaxUtils.sendGetRequest = function (url, handler, isJasonResponse) {
+    ajaxUtils.sendGetRequest = function (url, handler, isJsonResponse) {
         var request = getRequestObject();
         request.onreadystatechange = function () {
-            handlerResponse(request, handler, isJasonResponse);
+            handlerResponse(request, handler, isJsonResponse);
         };
         request.open("Get", url, true);
         request.send(null);
