@@ -1,35 +1,26 @@
 var what_to_sort;
 var need_to_sort_1;
 var need_to_sort_2;
-<<<<<<< HEAD
 var less_more;
 var last_i;
-=======
->>>>>>> c55cb3032b77f4fc383b8e7a755e1436631e7934
+
 
 window.onload = function() {
-	what_to_sort = $("th");
-	need_to_sort_1 = $("#todo td");
-	need_to_sort_2 = $("#staff td");
-<<<<<<< HEAD
+    what_to_sort = $("th");
+    need_to_sort_1 = $("#todo td");
+    need_to_sort_2 = $("#staff td");
     less_more = 0;
-    last_i= 6;
-	for (var i = 0; i < 6; ++i) {
-		what_to_sort.eq(i).attr("class", i + "");
-		what_to_sort.eq(i).click(function() {judge($(this));});
-=======
-	for (var i = 0; i < 6; ++i) {
-		what_to_sort.eq(i).attr("class", i + "");
-		what_to_sort.eq(i).click(function() {judge(i)});
->>>>>>> c55cb3032b77f4fc383b8e7a755e1436631e7934
-	}
-	for (var i = 0; i < 9; ++i) {
-		need_to_sort_1.eq(i).attr("class", (i % 3) + "");
-		need_to_sort_2.eq(i).attr("class", (i % 3 + 3) + "");
-	}
+    last_i = 6;
+    for (var i = 0; i < 6; ++i) {
+        what_to_sort.eq(i).attr("class", i + "");
+        what_to_sort.eq(i).click(function() {judge($(this));});
+    }
+    for (var i = 0; i < 9; ++i) {
+        need_to_sort_1.eq(i).attr("class", (i % 3) + "");
+        need_to_sort_2.eq(i).attr("class", (i % 3 + 3) + "");
+    }
 }
 
-<<<<<<< HEAD
 function judge(sort_head) {
     var s, s1, s2;
     var i = parseInt(sort_head.attr("class"));
@@ -38,7 +29,7 @@ function judge(sort_head) {
             sort_head.attr("id", "down");
         else
             sort_head.attr("id", "up");
-        less_more == 0? (less_more = 1): (less_more = 0);
+        less_more == 0 ? (less_more = 1): (less_more = 0);
     }
     else {
         sort_head.attr("id", "up");
@@ -115,8 +106,3 @@ function my_sort_m(s, s1, s2) {
         }
     }
 }
-=======
-function judge(i) {
-	var s = $("." + i + " td");
-}
->>>>>>> c55cb3032b77f4fc383b8e7a755e1436631e7934
