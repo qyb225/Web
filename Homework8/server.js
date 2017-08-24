@@ -10,7 +10,7 @@ function start(route) {
         console.log("Request for "  + pathname +  " received.");
         var ext = pathname.match(/(\.[^.]+|)$/)[0];
         console.log("Server has started!");
-        if (pathname != "/postlogin") {
+        if (pathname != "/postregister") {
             var may_user = qs.parse(url.parse(request.url).query)["username"];
             if (may_user != undefined) {
                 fs.readFile("./user.dat", "utf-8", function(err, data) {
@@ -93,7 +93,7 @@ function start(route) {
                 });
             }
         }
-        else if (pathname == "/postlogin") {
+        else if (pathname == "/postregister") {
             var all_post_data = "";
             var _repeat = "0000";
             var _valid = "0000";
